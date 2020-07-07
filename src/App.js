@@ -6,7 +6,7 @@ import Country from './components/Country/Country';
 
 import './App.css';
 
-import fetchData from './api/index';
+import {fetchData} from './api';
 
 class App extends React.Component {
 

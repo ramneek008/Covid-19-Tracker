@@ -10,7 +10,7 @@ const Cards = (props) => {
         return 'Loading...';
     }
     return (
-        <div className="container">
+        <div className="cards">
             <Grid container spacing={3}>
                 <Grid item component={Card} xs={12} md={3} className="card infected">
                     <CardContent>
