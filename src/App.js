@@ -3,9 +3,10 @@ import React from 'react';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import Country from './components/Country/Country';
+
 import './App.css';
 
-import { fetchData } from './api';
+import fetchData from './api/index';
 
 class App extends React.Component {
 
