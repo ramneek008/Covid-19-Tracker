@@ -10,15 +10,24 @@ import fetchData from './api/index';
 
 class App extends React.Component {
 
+  constructor(props)
+  {
+    super(props);
+
+    this.state = {
+      data: {}
+    }
+  }
+
   async componentDidMount(){
-    const data = await fetchData();
-    console.log(data);
+    const fetchedData = await fetchData();
+    this.setState({ data: fetchedData })
   }
 
   render() {
     return (
       <div className="container">
-        <Cards />
+        <Cards data={this.state.data}/>
         <Country />
         <Chart />
       </div>
