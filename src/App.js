@@ -1,5 +1,6 @@
 import React from 'react';
 
+import HeroSection from './components/HeroSection/HeroSection';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
@@ -28,20 +29,16 @@ class App extends React.Component {
   }
 
   countryChangeHandler = async(country) =>{
-    if (country!=='global'){
     const fetchedData = await fetchData(country);
     this.setState({data: fetchedData, country:country})
-    }
-    else{
-      const fetchedData = await fetchData();
-    this.setState({ data: fetchedData, country: '' })
-    }console.log(this.state.data);
+    
   }
 
   render() {
     return (
       <div className="container">
-        <img src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
+        <HeroSection />
         <CountryPicker countryChangeHandler = {this.countryChangeHandler}/>
         <Cards data={this.state.data}/>
         <Chart data={this.state.data} country={this.state.country} />

@@ -9,7 +9,18 @@ body {
   flex-direction: column;
 }
 
-img{
+.logo{
   height:150px;
   margin:20px;
+}
+
+@media (max-width:770px)
+{
+  .container{
+    margin: 0 10%;
+  }
+
+  .logo{
+    width:100%;
+  }
 }
