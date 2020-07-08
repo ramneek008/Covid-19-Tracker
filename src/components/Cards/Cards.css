@@ -1,12 +1,13 @@
 .cards
 {
-    margin: 50px 0;
+    margin: 50px 150px;
     
 }
 
 .card {
     display:block;
     margin: 0 auto !important;
+    padding:30px !important;
 }
 
 .infected {
@@ -20,6 +21,11 @@
 
 .deaths {
     border-bottom: 10px solid rgba(255, 0, 0,0.5);
+}
+
+.box-heading{
+    font-size:19px !important;
+    font-weight: 500 !important;
 }
 
 @media (max-width:770px)
