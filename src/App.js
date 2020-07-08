@@ -2,7 +2,7 @@ import React from 'react';
 
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
-import Country from './components/Country/Country';
+import CountryPicker from './components/CountryPicker/CountryPicker';
 
 import './App.css';
 
@@ -15,7 +15,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      data: {}
+      data: {},
+      country: ''
     }
   }
 
@@ -24,11 +25,16 @@ class App extends React.Component {
     this.setState({ data: fetchedData })
   }
 
+  countryChangeHandler = async(country) =>{
+    const fetchedData = await fetchData(country);
+    this.setState({data: fetchedData, country:country})
+  }
+
   render() {
     return (
       <div className="container">
         <Cards data={this.state.data}/>
-        <Country />
+        <CountryPicker countryChangeHandler = {this.countryChangeHandler}/>
         <Chart />
       </div>
     )
