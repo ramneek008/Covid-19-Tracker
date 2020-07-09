@@ -38,7 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1><img className="logo covid" src={covid} alt="logo" /> <img className="logo" src={tracker} /></h1>
+        <h1 className="app-heading"><img className="logo covid" src={covid} alt="logo" /> <img className="logo" src={tracker} /></h1>
         <India />
         <CountryPicker countryChangeHandler = {this.countryChangeHandler}/>
         <Cards data={this.state.data}/>

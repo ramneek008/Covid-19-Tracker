@@ -12,11 +12,11 @@ body {
 .logo{
   height:150px;
 }
-h1{
+
+.app-heading{
   display:flex;
   align-items: center;
   text-align: center;
-  color:#0e7171;
   margin:40px 0 ;
 }
 
