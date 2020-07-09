@@ -52,3 +52,18 @@ export const fetchCountries = async() => {
         console.log(error);
     }
 }
+
+export const fetchIndiaData = async() => {
+    try{
+        const {data} = await axios.get(`${url}/countries/India`);
+        const modifiedIndiaData = {
+            confirmed: data.confirmed,
+            recovered: data.recovered,
+            deaths: data.deaths
+        }
+        return modifiedIndiaData;
+
+    }catch(error){
+        console.log(error);
+    }
+}
