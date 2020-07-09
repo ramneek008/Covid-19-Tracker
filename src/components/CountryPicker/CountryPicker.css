@@ -1,6 +1,12 @@
+.countryPicker{
+    text-align: center;
+    width:40%;
+}
+
 .formControl{
     margin-bottom:30px !important;
-    text-align:center;
+    flex-direction: row !important;
+    align-items: center;
 }
 
 Select{
