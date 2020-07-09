@@ -8,7 +8,7 @@ const HeroSection = () => {
 
     return(
         <div className="heroSection">
-          <h1>STAY UPDATED</h1>
+          
             <Grid container spacing={3}>
                 <Grid item xs={12} md={3} className="row">
                     <CardContent>

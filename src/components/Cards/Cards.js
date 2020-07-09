@@ -15,15 +15,15 @@ const Cards = (props) => {
     return (
         <div className="cards">
             <Grid container spacing={2}>
-                <Grid item component={Card} xs={12} md={3} className="card infected">
+                <Grid item component={Card} sm={12} md={3} className="card infected">
                     
                     <Grid container spacing={3}>
-                        <Grid item xs direction="column" spacing={2}>
-                            <ButtonBase >
-                            <img alt="complex" src={infected} style={{width: '70%',height: '90%'}} />
+                        <Grid item xs direction="column" spacing={3}>
+                            <ButtonBase className="img-area" style={{minWidth:'100px',minHeight:'100%'}}>
+                            <img alt="infected" src={infected} className="grid-img" />
                             </ButtonBase>
                         </Grid>
-                        <Grid item xs direction="column" spacing={2}>
+                        <Grid item xs direction="column" spacing={3}>
                             <Typography color="textSecondary" gutterBottom className="box-heading">Infected</Typography>
                             <Typography variant="h4">
                                 <CountUp
@@ -40,12 +40,12 @@ const Cards = (props) => {
                 </Grid>
 
 
-                <Grid item component={Card} xs={12} md={3} className="card recovered">
+                <Grid item component={Card} sm={12} md={3} className="card recovered">
                     
                     <Grid container spacing={3}>
                         <Grid item xs direction="column" spacing={2}>
-                            <ButtonBase >
-                            <img alt="complex" src={recovered} style={{width: '70%',height: '90%'}} />
+                            <ButtonBase className="img-area">
+                            <img alt="recovered" src={recovered} className="grid-img" />
                             </ButtonBase>
                         </Grid>
                         <Grid item xs direction="column" spacing={2}>
@@ -65,12 +65,12 @@ const Cards = (props) => {
                 </Grid>
 
 
-                <Grid item component={Card} xs={12} md={3} className="card deaths">
+                <Grid item component={Card} sm={12} md={3} className="card deaths">
                     
                     <Grid container spacing={3}>
                         <Grid item xs direction="column" spacing={2}>
-                            <ButtonBase >
-                            <img alt="complex" src={death} style={{width: '70%',height: '90%'}} />
+                            <ButtonBase className="img-area">
+                            <img alt="death" src={death} className="grid-img" style={{transform:'scale(1.2)'}} />
                             </ButtonBase>
                         </Grid>
                         <Grid item xs direction="column" spacing={2}>

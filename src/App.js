@@ -5,7 +5,8 @@ import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
  
-import logo from './images/covid19_logo.png';
+import covid from './images/covid19_logo.png';
+import tracker from './images/tracker.png';
 
 import './App.css';
 
@@ -37,7 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <img className="logo" src={logo} alt="logo" />
+        <h1><img className="logo covid" src={covid} alt="logo" /> <img className="logo" src={tracker} /></h1>
         <HeroSection />
         <CountryPicker countryChangeHandler = {this.countryChangeHandler}/>
         <Cards data={this.state.data}/>

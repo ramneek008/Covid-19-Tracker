@@ -11,16 +11,29 @@ body {
 
 .logo{
   height:150px;
-  margin:20px;
 }
+h1{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  color:#0e7171;
+  margin:40px 0 ;
+}
+
 
 @media (max-width:770px)
 {
   .container{
-    margin: 0 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .logo{
+    height:22vw;
   }
 
-  .logo{
-    width:100%;
-  }
+ h1{
+   width:fit-content;
+ }
+
+
 }

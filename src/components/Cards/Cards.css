@@ -1,7 +1,7 @@
 .cards
 {
-    margin: 50px 150px;
-    
+    margin: 50px 5%;
+    text-align:center;
 }
 
 .card {
@@ -9,6 +9,17 @@
     margin: 0 auto !important;
     padding:30px !important;
 }
+
+.img-area{
+    min-width:120px;
+    min-height:80%
+}
+
+.grid-img{
+width:80%;
+height:100%;
+}
+
 
 .infected {
     background-color: rgba(0, 0, 255, 0.2);
@@ -28,7 +39,7 @@
     font-weight: 500 !important;
 }
 
-@media (max-width:770px)
+@media (max-width:863px)
 {
     .card{
         margin:2% 0 !important;
