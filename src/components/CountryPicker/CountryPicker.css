@@ -4,11 +4,30 @@
 }
 
 .formControl{
-    margin-bottom:30px !important;
     flex-direction: row !important;
     align-items: center;
 }
 
 Select{
     padding:10px 24px 10px 15px !important;
+}
+
+.world{
+    display:flex;
+    width:30%;
+    align-items:center;
+}
+
+.dropdown{
+    display:flex;
+    width:70%;
+    align-items:center;
+    height:max-content;
+}
+
+@media (max-width:770px)
+{
+    .countryPicker{
+        width:100%;
+    }
 }

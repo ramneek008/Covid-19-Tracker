@@ -22,8 +22,8 @@ const CountryPicker = ({ countryChangeHandler }) => {
     <div className="countryPicker">
         
         <FormControl className="formControl" >
-        <img src={world} alt="symptom" className="world" style={{display:'flex',width:'30%',alignItems:'center'}} />
-            <NativeSelect style={{display:'flex',width:'70%',alignItems:'center',height:'max-content'}} defaultValue="" onChange={(e) => countryChangeHandler(e.target.value)}>
+        <img src={world} alt="world" className="world" />
+            <NativeSelect className="dropdown" style={{}} defaultValue="" onChange={(e) => countryChangeHandler(e.target.value)}>
                 <option value="">Global</option>
                 {
                     country.map((countryName, i)=> <option key={i} value = {countryName}>{countryName}</option>)

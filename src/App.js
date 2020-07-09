@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeroSection from './components/HeroSection/HeroSection';
+import India from './components/India/India';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <h1><img className="logo covid" src={covid} alt="logo" /> <img className="logo" src={tracker} /></h1>
-        <HeroSection />
+        <India />
         <CountryPicker countryChangeHandler = {this.countryChangeHandler}/>
         <Cards data={this.state.data}/>
         <Chart data={this.state.data} country={this.state.country} />
