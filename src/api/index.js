@@ -59,7 +59,8 @@ export const fetchIndiaData = async() => {
         const modifiedIndiaData = {
             confirmed: data.confirmed,
             recovered: data.recovered,
-            deaths: data.deaths
+            deaths: data.deaths,
+            lastUpdate:data.lastUpdate
         }
         return modifiedIndiaData;
 

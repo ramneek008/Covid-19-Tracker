@@ -13,9 +13,8 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchedIndiaData = async() => {
       const data = await fetchIndiaData();
-      setIndiaData({confirmed:data.confirmed,
-      recovered:data.recovered,
-    deaths:data.deaths});
+      setIndiaData(data);
+      console.log(data);
     }
     
     fetchedIndiaData();
@@ -30,7 +29,7 @@ const HeroSection = () => {
 
           <Grid item lg={6} sm={6}>
           <Grid className="stats" container spacing={3}>
-            <Grid className="g-card" component={Card} item lg={6} spacing={3}>  
+            <Grid className="g-card infected" component={Card} item lg={6} spacing={3}>  
             <Typography color="textSecondary" gutterBottom className="box-heading">Infected</Typography>
                             <Typography variant="h4">
                               <CountUp
@@ -41,10 +40,10 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary">time</Typography>
-                            <Typography color="textSecondary">Number of active cases of COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom  >{new Date(indiaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary">Number of active cases of COVID-19 in India</Typography>
             </Grid>
-            <Grid className="g-card" component={Card} item lg={6} spacing={3}>
+            <Grid className="g-card recovered" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Recovered</Typography>
                             <Typography variant="h4">
                             <CountUp
@@ -55,10 +54,10 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary">time</Typography>
-                            <Typography color="textSecondary">Number of recoveries from COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom>{new Date(indiaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary">Number of recoveries from COVID-19 in India</Typography>
             </Grid>
-            <Grid className="g-card" component={Card} item lg={6} spacing={3}>
+            <Grid className="g-card deaths" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Deaths</Typography>
                             <Typography variant="h4">
                             <CountUp
@@ -69,8 +68,8 @@ const HeroSection = () => {
                               >
                               </CountUp>
                                 </Typography>
-                            <Typography color="textSecondary">time</Typography>
-                            <Typography color="textSecondary">Number of deaths due to COVID-19 in India</Typography>
+                            <Typography color="textSecondary" gutterBottom>{new Date(indiaData.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textPrimary">Number of deaths due to COVID-19 in India</Typography>
             </Grid>
           </Grid>
           </Grid>
@@ -80,7 +79,7 @@ const HeroSection = () => {
               <img alt="complex" class="symp" src={india} />
             </ButtonBase>
           </Grid>
-        </Grid>) : null}
+        </Grid>) : <h6>Loading...</h6>}
         </div>
     );
 }
