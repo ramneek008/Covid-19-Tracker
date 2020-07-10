@@ -56,8 +56,11 @@
         text-align: center;
         margin-bottom: 40px;
     }
+    canvas{
+        width:20vw;
+    }
     .doughnut{
-        width:100%;
+        width:90%
     }
     .g-card{
         width:80%;
