@@ -5,6 +5,7 @@ import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './India.css';
 import {fetchIndiaData} from '../../api';
+import india from '../../images/india3.png';
 
 const HeroSection = () => {
 
@@ -33,7 +34,8 @@ const HeroSection = () => {
 
     return(
         <div className="india">
-          <h1 className="ind-heading">India STATS</h1>
+          
+          <h1 className="ind-heading"><img src={india} className="ind-img" />INDIA's C-19 STATS</h1>
           {indiaData.confirmed ? (
           <Grid container className="ind-content" spacing={2}>
 

@@ -50,4 +50,8 @@ height:100%;
     .card{
         margin:2% 0 !important;
     }
+    .grid-img{
+        width:70%;
+        height:90%;
+        }
 }

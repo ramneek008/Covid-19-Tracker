@@ -1,14 +1,19 @@
 .india{
     margin: 0 0 50px 0;
-    background:url('../../images/india2.png');
-    background-repeat:no-repeat;
-    background-size: 50% 50%;
-    background-position: center;
 }
 
 .ind-heading{
     text-align: center;
     text-decoration: underline;
+    color:#004d00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ind-img{
+    width:120px;
+    padding-right:1%;
 }
 
 .ind-content{
