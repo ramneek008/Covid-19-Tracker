@@ -15,7 +15,6 @@ const HeroSection = () => {
     const fetchedIndiaData = async() => {
       const data = await fetchIndiaData();
       setIndiaData(data);
-      console.log(data);
     }
     
     fetchedIndiaData();
@@ -34,12 +33,11 @@ const HeroSection = () => {
 
     return(
         <div className="india">
-          
-          <h1 className="ind-heading"><img src={india} className="ind-img" />INDIA's C-19 STATS</h1>
+          <h1 className="ind-heading"><img src={india} className="ind-img" /><span style={{borderBottom:'2px solid '}}>INDIA's REPORT</span></h1>
           {indiaData.confirmed ? (
           <Grid container className="ind-content" spacing={2}>
 
-          <Grid item lg={6} sm={6}>
+          <Grid item lg={6} md={6}>
           <Grid className="stats" container spacing={3}>
             <Grid className="g-card infected" component={Card} item lg={6} spacing={3}>  
             <Typography color="textSecondary" gutterBottom className="box-heading">Infected</Typography>
@@ -86,7 +84,7 @@ const HeroSection = () => {
           </Grid>
           </Grid>
 
-          <Grid item lg={6} sm={6} className="doughnut">
+          <Grid item lg={6} md={6} className="doughnut">
               {doughnutChart}
           </Grid>
         </Grid>) : <h6>Loading...</h6>}

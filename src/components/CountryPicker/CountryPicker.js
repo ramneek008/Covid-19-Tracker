@@ -20,7 +20,6 @@ const CountryPicker = ({ countryChangeHandler }) => {
 
     return (
     <div className="countryPicker">
-        
         <FormControl className="formControl" >
         <img src={world} alt="world" className="world" />
             <NativeSelect className="dropdown" style={{}} defaultValue="" onChange={(e) => countryChangeHandler(e.target.value)}>
