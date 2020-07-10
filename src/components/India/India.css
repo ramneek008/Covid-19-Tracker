@@ -11,6 +11,12 @@
     text-decoration: underline;
 }
 
+.ind-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .stats{
     display:flex;
     flex-direction: column;
@@ -31,4 +37,8 @@
 .row{
     display: block;
     margin:0 auto !important;
+}
+
+.doughnut{
+    width:70vw;
 }

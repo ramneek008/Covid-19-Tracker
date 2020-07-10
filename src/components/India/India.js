@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-import {Card, CardContent, Typography, Grid, ButtonBase,Avatar, Paper } from '@material-ui/core';
+import {Card, Typography, Grid, ButtonBase } from '@material-ui/core';
+import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './India.css';
 import {fetchIndiaData} from '../../api';
-import india from '../../images/india.png';
 
 const HeroSection = () => {
 
@@ -19,13 +19,23 @@ const HeroSection = () => {
     
     fetchedIndiaData();
   },[setIndiaData]);
+
+  const doughnutChart = ( indiaData.confirmed ? (<Doughnut data= {{
+    labels:[ 'Infected', 'Recovered', 'Deaths'],
+    datasets:[{
+      data: [indiaData.confirmed.value, indiaData.recovered.value, indiaData.deaths.value],
+      backgroundColor: ['rgba(20, 20, 255, 0.8)', 'rgba(20, 255, 20, 0.8)','rgba(255, 20, 20, 0.8)'],
+      hoverBackgroundColor:['rgba(0, 0, 255, 1)', 'rgba(0, 255, 0, 1)', 'rgba(255, 0, 0, 1)']
+    }]
+  }}
+  ></Doughnut>) : null)
   
 
     return(
         <div className="india">
           <h1 className="ind-heading">India STATS</h1>
           {indiaData.confirmed ? (
-          <Grid container spacing={2}>
+          <Grid container className="ind-content" spacing={2}>
 
           <Grid item lg={6} sm={6}>
           <Grid className="stats" container spacing={3}>
@@ -74,10 +84,8 @@ const HeroSection = () => {
           </Grid>
           </Grid>
 
-          <Grid item lg={6} sm={6}>
-            <ButtonBase >
-              <img alt="complex" class="symp" src={india} />
-            </ButtonBase>
+          <Grid item lg={6} sm={6} className="doughnut">
+              {doughnutChart}
           </Grid>
         </Grid>) : <h6>Loading...</h6>}
         </div>
