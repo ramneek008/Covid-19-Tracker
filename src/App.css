@@ -1,5 +1,6 @@
 body {
-  background:linear-gradient(135deg,white, #fff2e6,white);
+  background:linear-gradient(135deg,#ffcc99, #ffe6cc,white,#fff2e6, #ffe6cc);
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -24,8 +25,8 @@ body {
 @media (max-width:770px)
 {
   .container{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   .logo{

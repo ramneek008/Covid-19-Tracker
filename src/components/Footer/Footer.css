@@ -1,5 +1,5 @@
 .footer {
-    background:linear-gradient(	0deg,rgba(230, 230, 255,0.5), rgba(255, 97, 72,0.5));
+    background:linear-gradient(	0deg,#ffb366, #ffe6cc);
     width:100%;
     text-align:center;
 }
@@ -8,6 +8,7 @@ h3{
     font-weight:500;
     font-size: 23px;
     font-family: 'Averia Sans Libre';
+    padding:0.5%;
 }
 
 @media (max-width:770px)
