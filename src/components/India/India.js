@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import {Card, Typography, Grid, ButtonBase } from '@material-ui/core';
+import {Card, Typography, Grid} from '@material-ui/core';
 import { Doughnut} from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import './India.css';
@@ -33,7 +33,7 @@ const HeroSection = () => {
 
     return(
         <div className="india">
-          <h1 className="ind-heading"><img src={india} className="ind-img" /><span style={{borderBottom:'2px solid '}}>INDIA's REPORT</span></h1>
+          <h1 className="ind-heading"><img src={india} className="ind-img" alt="Indian flag" /><span style={{borderBottom:'2px solid '}}>INDIA's REPORT</span></h1>
           {indiaData.confirmed ? (
           <Grid container className="ind-content" spacing={2}>
 

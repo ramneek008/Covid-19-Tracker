@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid, ButtonBase } from '@material-ui/core';
+import { Card, Typography, Grid, ButtonBase } from '@material-ui/core';
 import CountUp from 'react-countup';
 import recovered from '../../images/recovered.svg';
 import death from '../../images/death.svg';
