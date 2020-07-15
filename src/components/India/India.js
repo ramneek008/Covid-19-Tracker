@@ -51,7 +51,7 @@ const HeroSection = () => {
                               </CountUp>
                                 </Typography>
                             <Typography color="textSecondary" gutterBottom  >{new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary">Number of active cases of COVID-19 in India</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of active cases of COVID-19 in India</Typography>
             </Grid>
             <Grid className="g-card recovered" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Recovered</Typography>
@@ -65,7 +65,7 @@ const HeroSection = () => {
                               </CountUp>
                                 </Typography>
                             <Typography color="textSecondary" gutterBottom>{new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary">Number of recoveries from COVID-19 in India</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of recoveries from COVID-19 in India</Typography>
             </Grid>
             <Grid className="g-card deaths" component={Card} item lg={6} spacing={3}>
             <Typography color="textSecondary" gutterBottom className="box-heading">Deaths</Typography>
@@ -79,7 +79,7 @@ const HeroSection = () => {
                               </CountUp>
                                 </Typography>
                             <Typography color="textSecondary" gutterBottom>{new Date(indiaData.lastUpdate).toDateString()}</Typography>
-                            <Typography color="textPrimary">Number of deaths due to COVID-19 in India</Typography>
+                            <Typography color="textPrimary" className="bottom-line">Number of deaths due to COVID-19 in India</Typography>
             </Grid>
           </Grid>
           </Grid>

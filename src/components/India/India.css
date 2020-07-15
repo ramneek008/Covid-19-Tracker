@@ -7,13 +7,14 @@
     color:#004d00;
     font-weight:600;
     font-family: 'Averia Sans Libre';
+    font-size:28px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .ind-img{
-    width:120px;
+    width:100px;
     padding-right:1%;
 }
 
@@ -21,6 +22,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bottom-line{
+    font-size: 13px !important;
 }
 
 .stats{
@@ -54,11 +59,12 @@
 
     .ind-heading{
         width:80vw;
+        font-size:24px;
         text-align: center;
         margin-bottom: 40px;
     }
     .ind-img{
-        width:16vw;
+        width:15vw;
     }
     canvas{
         width:20vw;

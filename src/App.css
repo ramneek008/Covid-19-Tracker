@@ -11,14 +11,14 @@ body {
 }
 
 .logo{
-  height:150px;
+  height:110px;
 }
 
 .app-heading{
   display:flex;
   align-items: center;
   text-align: center;
-  margin:40px 0 ;
+  margin:2% 0 ;
 }
 
 
@@ -30,7 +30,7 @@ body {
   }
   
   .logo{
-    height:22vw;
+    height:100px;
   }
 
  h1{
@@ -38,4 +38,11 @@ body {
  }
 
 
+}
+
+@media (max-width:500px)
+{
+  .logo{
+    height:22vw;
+  }
 }

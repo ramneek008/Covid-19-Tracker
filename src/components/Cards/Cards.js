@@ -25,7 +25,7 @@ const Cards = (props) => {
                         </Grid>
                         <Grid item xs direction="column" spacing={3}>
                             <Typography color="textSecondary" gutterBottom className="box-heading">Infected</Typography>
-                            <Typography variant="h4">
+                            <Typography variant="h5">
                                 <CountUp
                                     start={0}
                                     end={props.data.confirmed.value}
@@ -50,7 +50,7 @@ const Cards = (props) => {
                         </Grid>
                         <Grid item xs direction="column" spacing={2}>
                             <Typography color="textSecondary" gutterBottom className="box-heading">Recovered</Typography>
-                            <Typography variant="h4">
+                            <Typography variant="h5">
                                 <CountUp
                                     start={0}
                                     end={props.data.recovered.value}
@@ -75,7 +75,7 @@ const Cards = (props) => {
                         </Grid>
                         <Grid item xs direction="column" spacing={2}>
                             <Typography color="textSecondary" gutterBottom className="box-heading">Deaths</Typography>
-                            <Typography variant="h4">
+                            <Typography variant="h5">
                                 <CountUp
                                     start={0}
                                     end={props.data.deaths.value}
