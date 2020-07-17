@@ -7,7 +7,8 @@
 .card {
     display:block;
     margin: 0 auto !important;
-    padding:30px !important;
+    padding:2.2% !important;
+    text-align: center;
 }
 
 .img-area{
@@ -16,27 +17,27 @@
 }
 
 .grid-img{
-width:80%;
-height:100%;
+width:70%;
+height:90%;
 }
 
 
 .infected {
     background-image:linear-gradient(90deg, white, rgba(230, 230, 255,0.7)) !important;
-    border: 4px solid rgba(200, 200, 255,0.5);
-    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+    border: 2px solid rgba(200, 200, 255,0.5);
+    border-bottom: 8px solid rgba(0, 0, 255, 0.5);
 }
 
 .recovered {
     background-image:linear-gradient(90deg, white, rgba(230, 255, 230,0.7)) !important;
-    border: 4px solid rgba(200, 255, 200,0.5);
-    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    border: 2px solid rgba(200, 255, 200,0.5);
+    border-bottom:8px solid rgba(0, 255, 0, 0.5);
 }
 
 .deaths {
     background-image:linear-gradient(90deg, white, rgba(255, 230, 230,0.7)) !important;
-    border: 4px solid rgba(255, 200, 200,0.5);
-    border-bottom: 10px solid rgba(255, 0, 0,0.5);
+    border: 2px solid rgba(255, 200, 200,0.5);
+    border-bottom: 8px solid rgba(255, 0, 0,0.5);
 
 }
 
@@ -45,10 +46,12 @@ height:100%;
     font-weight: 550 !important;
 }
 
-@media (max-width:863px)
+
+@media (max-width:599px)
 {
     .card{
         margin:2% 0 !important;
+        padding:5% !important;
     }
     .grid-img{
         width:70%;

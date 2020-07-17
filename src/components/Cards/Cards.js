@@ -15,7 +15,7 @@ const Cards = (props) => {
     return (
         <div className="cards">
             <Grid container spacing={2}>
-                <Grid item component={Card} sm={12} md={3} className="card infected">
+                <Grid item component={Card} xs={12} sm={3} className="card infected">
                     
                     <Grid container spacing={3}>
                         <Grid item xs direction="column" spacing={3}>
@@ -33,14 +33,14 @@ const Cards = (props) => {
                                     separator=","
                                 />
                                 </Typography>
-                            <Typography color="textSecondary">{new Date(props.data.lastUpdate).toDateString()}</Typography>
+                            <Typography color="textSecondary" >{new Date(props.data.lastUpdate).toDateString()}</Typography>
                         </Grid>
                     </Grid>
 
                 </Grid>
 
 
-                <Grid item component={Card} sm={12} md={3} className="card recovered">
+                <Grid item component={Card} xs={12} sm={3} className="card recovered">
                     
                     <Grid container spacing={3}>
                         <Grid item xs direction="column" spacing={2}>
@@ -65,17 +65,17 @@ const Cards = (props) => {
                 </Grid>
 
 
-                <Grid item component={Card} sm={12} md={3} className="card deaths">
+                <Grid item component={Card} xs={12} sm={3} className="card deaths">
                     
                     <Grid container spacing={3}>
                         <Grid item xs direction="column" spacing={2}>
                             <ButtonBase className="img-area">
-                            <img alt="death" src={death} className="grid-img" style={{transform:'scale(1.2)'}} />
+                            <img alt="death" src={death} className="grid-img" />
                             </ButtonBase>
                         </Grid>
                         <Grid item xs direction="column" spacing={2}>
                             <Typography color="textSecondary" gutterBottom className="box-heading">Deaths</Typography>
-                            <Typography variant="h5">
+                            <Typography variant="h5" style={{padding:"0 5px"}}>
                                 <CountUp
                                     start={0}
                                     end={props.data.deaths.value}

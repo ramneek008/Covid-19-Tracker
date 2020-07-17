@@ -36,14 +36,16 @@
    text-align:center;
 }
 
+.update{
+    font-size:12px !important;
+    display:inline;
+}
+
 .g-card{
     width:90%;
     margin:2% !important;
 }
 
-.symp{
-    width:100%;
-}
 
 .row{
     display: block;
@@ -53,6 +55,7 @@
 .doughnut{
     width:50vw;
 }
+
 
 @media (max-width:770px)
 {
