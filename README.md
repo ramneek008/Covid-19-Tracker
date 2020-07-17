@@ -1,6 +1,11 @@
 # Covid-19 Tracker
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34359ff8-1fe9-48a2-907d-96b757827789/deploy-status)](https://app.netlify.com/sites/covid-19-tracker-india-world/deploys)
+
 A real-time tracker that shows the updated count of Covid-19 stats across the globe. To have a look on long-term stats, it plots the line chart of the Covid-19 report globally. It also plots the related graphs according to different countries you want to survey about. 
+
+[View live version](https://covid-19-tracker-india-world.netlify.app/)
+
 
 ### Screenshots
 
